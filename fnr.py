@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import xlwt
-from split_file import newf
+from combine_file import newf
 
 file=newf
 df = pd.DataFrame()
@@ -19,5 +19,5 @@ df= df.replace(to_replace=find, value=rep)
 
 print(df)
 # df.to_excel(file,sheet_name="fnr")
-df.to_excel (r'C:\Users\USER\Desktop\python\exfiles\export_dataframe.xlsx', index = False, header=True)
+df.to_excel (newf, index = False, header=True)
 
